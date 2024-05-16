@@ -11,6 +11,67 @@
 
     <!-- 가상의 멤버십 서비스를 가정하고 가입 폼을 만들어 봅시다 -->
 
+    <FORM action="#" method="POST" >
+        <!-- action : 폼에 입력된 데이터를 전송할 서버의 페이지(주소)
+                    액션이없으면 기본값(자기자신)
+             method : 입력된 데이터를 전송할 방법(get,post 방식) / 기본값 > get   -->
+
+        <fieldset><!-- 입력 양식의 그룹-->
+            <legend>회원정보</legend><!-- 입력양식 방법의 타이틀(제목)-->
+            <label FOR="username">사용자이름</label>
+            <input TYPE="text" name="username" id="username" required></label><br/><!--required : 입력이없으면 전송중지-->
+
+            <label for="email">사용자 이메일</label>
+            <input type="email" name="email" id="email" required><br>
+
+            <label FOR="password">비 밀 번 호</label>
+            <input type="password" name="password" id="password" required></label><br/>
+            
+
+            <label for="password_comfirm">비밀번호 확인</label>
+            <input type="password" name="password_comfirm" id="password_comfirm"/><br/>
+
+            <!-- radio : 여러개 중에서 한개만 선택-->
+            <label>성별</label>
+            <input type="radio" name="gender" id="male" value="M" non_checked/>
+            <label for="mail">남성</label>
+            <input type="radio" name="gender" id="female" value="F" non_checked/>
+            <label for="mail">여성</label><br>
+           
+            
+            <!-- checkbox : 여러개 복수선택 가능-->
+            <label>선호음료</label>
+            <input type="checkbox" name="favorit" id="am" value="am"/>
+            <label for="am">아메리카노</label>
+            <input type="checkbox" name="favorit" id="lat" value="lat"/>
+            <label for="lat">라떼</label><br/>
+
+            
+            <!-- select : 여러개 option 중에서 선택-->
+            <label>통신사</label>
+            <select name="telecom">
+                <option value="">선택</option>
+                <option value="S">SKT</option>
+                <option value="K">KT</option>
+                <option value="L">LGT</option>
+                <option value="E">기타</option>
+            </select><br/>
+            
+            <!-- 여러 줄 테스트 입력-->
+            <textarea cols="80" rows="10">하교마렵다</textarea><br/>
+
+            <input type="checkbox" name="terms" id="terms" required />
+            <label for="terms">이용약관에 동의합니다</label><br/>
+
+            <!-- 전송 or 새로작성-->
+            <input type="submit" value="가입하기" />
+            <input type="reset" value="다시작성" />
+        </fieldset>
+        
+       
+       
+    
+    </FORM>
 </body>
 
 </html>
