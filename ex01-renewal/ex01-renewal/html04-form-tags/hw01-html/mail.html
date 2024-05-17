@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="ko"> <!-- 한국어문서만 검색할때, 음성으로 할때 한국어 음성지원 -->
+    <head>
+        <meta charset="UTF-8"> <!-- 브라우저가 문서를 해석할때 필요한 정보 -->
+        <title>인터넷 개론</title>
+        <!-- 스타일시트자리 -->
+    </head>
+
+    <body>
+        <p>목차</p>
+        <ol>
+            <li><a href="history.html" title="페이지 내부링크">정의와 역사</a></li>
+            <li><a href="inter.html" title="페이지 내부링크">특징과 영향</a></li>
+            <li><a href="speed.html" title="페이지 내부링크">국가별 속도</a></li>
+        </ol>
+    <hr>
+     <br/>
+
+     <h1 a href="#mail.html">메일링 리스트 가입</h1>
+     <h5>회원 가입 폼</h5>
+
+    <FORM action="#" method="POST" >
+
+        <fieldset><!-- 입력 양식의 그룹-->
+            <legend>회원정보</legend><!-- 입력양식 방법의 타이틀(제목)-->
+            <label FOR="username">사용자이름</label>
+            <input TYPE="text" name="username" id="username" required></label><br/><!--required : 입력이없으면 전송중지-->
+
+            <label for="email">사용자 이메일</label>
+            <input type="email" name="email" id="email" required><br>
+
+            <label FOR="password">비 밀 번 호</label>
+            <input type="password" name="password" id="password" required></label><br/>         
+
+            <label for="password_comfirm">비밀번호 확인</label>
+            <input type="password" name="password_comfirm" id="password_comfirm"/><br/>
+
+            <!-- radio : 여러개 중에서 한개만 선택-->
+            <label>성별</label>
+            <input type="radio" name="gender" id="male" value="M" non_checked/>
+            <label for="mail">남성</label>
+            <input type="radio" name="gender" id="female" value="F" non_checked/>
+            <label for="mail">여성</label><br>
+
+            <!-- select : 여러개 option 중에서 선택-->
+            <label>통신사</label>
+            <select name="telecom">
+                <option value="">선택</option>
+                <option value="S">SKT</option>
+                <option value="K">KT</option>
+                <option value="L">LGT</option>
+                <option value="E">기타</option>
+            </select><br/>
+        
+            <!-- 전송 or 새로작성-->
+            <input type="submit" value="가입하기" />
+            <input type="reset" value="다시작성" />
+    </FORM>
+
+
+
+
+</body>
+</html>

@@ -3,6 +3,63 @@
 
 <head>
     <title>CSS 가상 클래스 실습</title>
+    <style>
+        /* 가상 선택자
+            요소의 특정 상태에 부여되는 선택자
+            단독으로 사용X
+            셀렉터의 상태에 따라 선택 가능*/
+
+        /* 반응 선택자 - 순서에 유의 */
+        /* link visited는 a태그에서만 사용 */
+        A:LINK { /* 방문한 적이 없는 링크 */
+            COLOR:green;
+        }
+
+        A:visited{  /* 이미 방문한 링크 */
+            COLOR:GRAY;
+            font-weight: BOLD;
+        }
+
+        a:hover { /* 마우스가 올라갔을때 */
+            color:red;
+        }
+
+        A:active { /* 클릭한 상태*/
+            color:blue;
+        }
+
+        /* 상태 선택자 : 입력 양식의 상태에 따라 발생하는 선택자 */
+        input:focus{
+            background-color: aquamarine;
+        }
+
+        input:disabled{
+            background-color: lavenderblush;
+        }
+
+        input[type="checkbox"]:checked{
+            background-color: rgb(red, green, blue);
+        }
+
+        /* 구조 선택자 : 등장하는 순서에 따른 선택. 주로 형제관계 */
+        ul#list > li:nth-child(2n) { 
+            /* ul#list의 자식들 n번째 중에서 2n번째(짝수) 요소들 (2,4,6 번째 형제들)*/
+            color:green;
+        }
+
+        ul#list > li:nth-child(2n+1) {
+             /* ul#list의 자식들 n번째 중에서 2n+1 번째(홀수) 요소들 (1,3,5 번째 형제들)*/
+             color:lightgreen;
+            }
+
+        ul#list > li:first-child{ /*nth-child(1) 동일 */
+            color:red;
+        }  
+        
+        ul#list > li:last-child{
+            color:blue;
+        }
+    </style>
 </head>
 
 <body>

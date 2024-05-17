@@ -3,10 +3,24 @@
 
 <head>
     <title>What does Cascading means?</title>
+    <!-- 1.important > inLine > internal ....>Browser Default
+         2. 나중에 정의된 스타이 ㄹ규칙이 먼저 정의된 스타일 규칙을 대체-->
+         <!-- 외부 css -->
+         <link rel="stylesheet"
+                type="text/css"
+                href="/ex01-renewal/ex01-renewal/css/external.css"/>
+
+                <!-- 내부 css -->
+                <style>
+                    h1{
+                        color:white;
+                    }
+                </style>
 </head>
 
 <body>
-    <h1>Hello, External CSS!</h1>
+    <!-- inLine style-->
+    <h1 style="color:lightgreen;">Hello, External CSS!</h1>
     <p>This paragraph is styled with external CSS.</p>
 </body>
 
