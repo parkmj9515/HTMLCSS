@@ -3,11 +3,126 @@
 
 <head>
     <title>CSS 폰트 실습</title>
+    <!-- 구글 웹 폰트-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Noto+Color+Emoji&family=Noto+Sans+KR:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&family=Noto+Sans+KR:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- 구글 웹 폰트-->
+    <style>
+        /* font-family */
+        /* 가장 마지막에 generic font(serif,sans-serif,monospace 중 하나) */
+
+      #font-family > .serif{
+        font-family: 'Times New Roman', Times, serif; /* 첫번재 폰트가없으면 다음폰트로 선택하겠다 */
+      }
+
+      #font-family > .sans-serif{
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      #font-family > .monospace{
+        font-family: 'Courier New', Courier, monospace;
+      }
+/*------------------------------- font-weight -----------------------------------------------------*/
+
+      /* font-weight :  글꼴 두께 */
+      /* 키워드 방식 */
+      .font-weight > .lighter{
+        font-weight: lighter;
+      }
+      .font-weight > .normal{
+        font-weight: normal;
+      }
+      .font-weight > .bold{
+        font-weight: bold;
+      }
+      
+        .font-weight > .n100{
+        font-weight: 100;
+        }
+        .font-weight > .n400{
+            font-weight: 400;
+        }
+        .font-weight > .n700{
+            font-weight: 700;
+        }
+/*----------------------------- font-style (기울임)----------------------------------------------------------------*/
+        .font-style > .normal{
+            font-style: normal;
+        }
+        .font-style > .italic{
+            font-style: italic;
+        }
+        .font-style > .oblique{
+            font-style: oblique;
+        }
+
+/*----------------------------- line-height (줄간격) ----------------------------------------------------------------*/
+
+        .line-height{
+            height: 100px;
+        }
+        .line-height > div{
+            border: 1px dotted red;
+            display: inline-block;
+        }
+        .line-height > .n10{
+            line-height: 1.0;
+        }
+        .line-height > .n15{
+            line-height: 1.5;
+        }
+        .line-height > .n20{
+            line-height: 2.0;
+        }
+        #web-font{
+            font-family: "Nanum Pen Script", cursive;
+            font-weight: 400;
+            font-style: normal;
+        }
+        #web-font2{
+            font-family: "Noto Sans KR", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: <weight>;
+            font-style: normal;
+        }
+
+/*----------------------------- text-align (글 위치) ----------------------------------------------------------------*/   
+        .text-align > .left{
+            text-align: left;
+        }
+        .text-align > .center{
+            text-align: center;
+        }
+        .text-align > .right{
+            text-align: right;
+        }
+
+/*----------------------------- text-decoration () ----------------------------------------------------------------*/  
+
+        .text-decoration > .nooe{
+            text-decoration: none;
+        }
+        .text-decoration > .line-through{ 
+            text-decoration: line-through;
+        }
+        .text-decoration > .underline{
+            text-decoration: underline;
+        } 
+        .text-decoration > .overline{
+            text-decoration: overline;
+        }
     </style>
 </head>
 
 <body>
     <h1>CSS 폰트 실습</h1>
+    <h2>웹폰트</h2>
+    <div id="web-font">웹폰트 적용 연습</div>
+    <div id2 ="web-font2">웹폰트 나눔</div>
 
     <h2>font-family</h2>
     <ul id="font-family">
@@ -28,6 +143,7 @@
         <li class="n100">100: thin</li>
         <li class="n400">400: normal</li>
         <li class="n700">700: bold</li>
+        <!-- <li>class="n900">900: bolder </li> -->
     </ul>
 
     <h3>키워드로 입력</h3>
@@ -55,8 +171,8 @@
             line-height: 1.5
         </div>
         <div class="n20">
-            line-height: 1.5<br>
-            line-height: 1.5
+            line-height: 2.0<br>
+            line-height: 2.0
         </div>
     </div>
 
@@ -71,7 +187,7 @@
     <ul class="text-decoration">
         <li class="none">none</li>
         <li class="line-through">line-through</li>
-        <li class="underline">underline</li>
+        <li class="underline">underline</li><br/>
         <li class="overline">overline</li>
     </ul>
 
