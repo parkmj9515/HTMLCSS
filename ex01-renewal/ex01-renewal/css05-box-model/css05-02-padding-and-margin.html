@@ -3,6 +3,73 @@
 
 <head>
     <title>CSS Box Model 실습</title>
+    <style>
+        /* 기본 마진과패딩 초기화 */
+        *{
+            margin:0;
+            padding:0;
+        }
+        .margin-box{
+            display: flex;
+            width: 200px;
+            height: 200px;
+            background-color: lightgreen;
+            justify-content: center;
+            align-items: center;
+        }
+        .padding-box{
+            display: flex;
+            width: 100px;
+            height: 30px; 
+            background-color: pink;
+            justify-content: center;
+            align-items: center;
+
+            border: 1px solid black;
+        }
+
+        .bottom-box {
+            display: flex;
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        /* 패딩속성 : 내부 간격 */
+        .padding-box{
+            /* padding:100px; */
+            /* padding-top: 10px;
+            padding-right: 20px;
+            padding-bottom: 30px;
+            padding-left: 40px; */
+
+            /* 값이 4개 : 위 오른쪽 아래 왼 시계방향 */
+            /* padding: 10px 20px 30px 40px; */
+
+            /* 값이 2개 : 위,아래  오른쪽,왼쪽 */
+            padding: 10px 20px;
+        }
+
+        /* 마진 속성 : 외부 간격 */
+        .margin-box{
+            border: 2px  dotted green;
+            /* 값이 하나면 4방향 같은 간격 적용 */
+            margin: 10px;
+            /* 방향 접미사를 활용, 개별 간격 적용 */
+            /*margin-top: 10px;
+            margin-right: 20px;
+            margin-bottom: 30px;
+            margin-left: 40px; */
+
+            /* 값이 4개 : 위 오른쪽  아래 왼쪽 */
+            /* margin: 10px 20px 30px 40px; */
+
+            /* 값이 2개 : 위,아래 오른쪽,왼쪽 */
+            margin: 10px 20px;
+        }
+    </style>
 </head>
 
 <body>
