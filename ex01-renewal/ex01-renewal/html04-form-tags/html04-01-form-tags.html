@@ -52,7 +52,7 @@
                            console.log(`${message}를 선택하셨습니다`);
                             
                         // checkbox
-                        // 최소 1개의 체크박스가 선택되어 있어야한다
+                        // 가정 : 최소 1개의 체크박스가 선택되어 있어야한다
                            let checkedCnt = 0;
                            for (let i=0; i < frm.fav.length; i++) {
                                 if(frm.fav[i].checked) { // 체크가 되어있으면
@@ -71,7 +71,7 @@
                             console.log(frm.telecom.options[frm.telecom.selectedIndex].value+ "을 선택하셨습니다");
 
                          // 이용 약관 동의(terms)
-                            if(frm.terms.checked) {
+                            if(!frm.terms.checked) {
                                 alert("이용약관에 동의하세요");
                                 return;
                             }
@@ -120,9 +120,9 @@
             
             <!-- checkbox : 여러개 복수선택 가능-->
             <label>선호음료</label>
-            <input type="checkbox" name="favorit" id="am" value="am"/>
+            <input type="checkbox" name="fav" id="am" value="am"/>
             <label for="am">아메리카노</label>
-            <input type="checkbox" name="favorit" id="lat" value="lat"/>
+            <input type="checkbox" name="fav" id="lat" value="lat"/>
             <label for="lat">라떼</label><br/>
 
             
