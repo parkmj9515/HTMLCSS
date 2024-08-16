@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "HTMLCSS",
+			"path": "."
+		},
+		{
+			"path": "../../../Downloads/responsive/responsive"
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5501,
+		"liveServer.settings.multiRootWorkspaceName": "HTMLCSS"
+	}
+}
